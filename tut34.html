@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow & Text Shadow
+    </title>
+</head>
+<style>
+    .container {
+        display: flex;
+    }
+    .card{
+
+        padding: 23px 12px;
+        /* border: 2px solid pink; */
+        margin: 23px 12px;
+       background-color: bisque;
+       /* box box-shadow: offset: x offset y color, blur radius color,
+       blur radius spread color; */
+
+       /* box-shadow: 10px 10px (10px = blur radius) 14px = spread radius rgb(235, 159, 197); */
+       box-shadow: 10px 10px 10px  rgb(235, 159, 197);
+       /* text-shadow: 10px 10px; */
+    }
+    h2{
+        text-shadow: 3px 3px  pink;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>Card1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eligendi qui assumenda ea culpa eaque! Dolores ex ut distinctio tempora
+                asperiores culpa dolore optio voluptatum adipisci, saepe perferendis amet
+                libero laboriosam nostrum in iure vitae.</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>Card2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eligendi qui assumenda ea culpa eaque! Dolores ex ut distinctio tempora
+                asperiores culpa dolore optio voluptatum adipisci, saepe perferendis amet
+                libero laboriosam nostrum in iure vitae.</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>Card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eligendi qui assumenda ea culpa eaque! Dolores ex ut distinctio tempora
+                asperiores culpa dolore optio voluptatum adipisci, saepe perferendis amet
+                libero laboriosam nostrum in iure vitae.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Object</title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is a math object tutorial</h1>
+    </div>
+    <script>
+        // printing the math oject
+ let m = Math;
+ console.log(m)
+
+//  printing the cnstants from math Object 
+ console.log("The Value of Math.E is", Math.E)
+ console.log("The Value of Math.PT is", Math.PI)
+ console.log("The Value of Math.LN2 is", Math.LN2)
+ console.log("The Value of Math.LOG2Eis", Math.LOG2E)
+
+
+//  printing the functions from math Object
+let a = 40.254465;
+let b = 50.7777777;
+console.log("The value of a and b is", a,b);
+console.log("The value of a and b rounded is", Math.round(a),Math.round(b));
+
+console.log("4 raised to the power of 2 is", Math.pow(4,2))
+console.log("2 raised to the power of 2 is", Math.pow(2,2))
+
+
+console.log("Square root of 50 is", Math.sqrt(50))
+console.log("Square root of 144 is", Math.sqrt(144))
+
+// ceil and floor
+console.log("5.8 rounded up to nearest integer  is", Math.ceil(5.8))
+console.log("5.8 rounded down to nearest integer  is", Math.floor(5.8))
+
+// Absolute Value or Abs value function
+console.log("Absolute value of 5.697  is", Math.abs(5.697))
+console.log("Absolute value of -5.697  is", Math.abs(-5.697))
+
+// Trignometric Functions
+console.log("The value of Sin(pi) is " , Math.sin(Math.PI))
+console.log("The value of tan(pi/2) is " , Math.sin(Math.PI/2))
+
+
+// Min and max functionS
+console.log("Minimum value of 1,2,3 is", Math.min(1,2,3));
+console.log("Minimum value of 11,12,3 is", Math.min(11,12,3));
+console.log("Maximum value of 1,2,3 is", Math.max(1,2,3));
+console.log("Maximum value of 11,12,3 is", Math.max(11,12,3));
+
+// generating a random number
+let r = Math.random();
+console.log("The random number is",r)
+
+// random number b/w (a,b) = a + (b-a)*Math.random()
+let a1 = 1;
+let b1 = 100;
+let r1_100 = a1+ (b1-a1)*Math.random();
+console.log("The random number is",r1_100)
+
+let c = 1;
+let d = 100;
+let e = (c,d)*Math.random();
+console.log("The random number is",e)
+    </script>
+</body>
+</html>
+

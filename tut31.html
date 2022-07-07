@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+
+h1{
+ background-color: aqua;
+ color: palevioletred;
+ font-weight: bold;
+ text-align: center;
+
+}
+ 
+/* if p is contained by any align which is contained by div  */
+/* div li p{
+    color: hotpink;
+    background-color: antiquewhite;
+    font color: bold;
+   text align:center;
+/* }  */
+
+
+
+/* id p is right inside div then this css  will be apply */
+ /* div >p{
+    color: yellow;
+    font: bold;
+    background-color: pink;
+ }  */
+
+
+ /* if p is right after or next sibling of div? */
+ /* div+p
+ {
+
+    color: white;
+    background-color: hotpink;
+ } */
+
+    </style>
+</head>
+<body>
+    <h1>This is selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+               <li class="item"><p> This is another paragraph inside li</p></li>
+               <li class="item"></li>
+               <li class="item"></li>
+               <li class="item"></li>
+            </ul>
+            <p> This is a paragraph</p>
+        </div>
+        <p>this is another paragraph</p>
+    </div>
+    <p>this is outermost paragraph</p>
+</body>
+</html>

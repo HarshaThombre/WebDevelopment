@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid + Media Queries</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section  section aside aside '
+                'footer footer footer footer';
+        }
+
+        .bdr {
+            border: 2px solid black;
+            padding: 10px 25px;
+            background-color: wheat;
+        }
+
+        nav {
+            grid-area: navbar;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+
+        @media (max-width:300px) {
+            body {
+                background-color: rgb(111, 167, 167);
+
+            }
+        }
+
+        @media (min-width:300px) and (max-width:500px) {
+            body {
+                background-color: rgb(209, 116, 162);
+
+            }
+
+            .container {
+
+
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section  section section  section'
+                    'footer footer footer footer';
+            }
+
+            aside {
+                display: none;
+            }
+
+        }
+
+        @media (min-width:500px) and (max-width:800px) {
+            body {
+                background-color: yellow;
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+
+            .container {
+
+
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section  section section  section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+
+
+        }
+
+        @media (min-width:800px) {
+            body {
+                background-color: plum;
+                background-color: rgb(192, 124, 192);
+
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>Home</span>
+            <span>About</span>
+            <span>Services</span>
+            <span>Contact</span>
+
+        </nav>
+        <section class="bdr">
+            <h2>Learn CSS in hindi</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias ut beatae, commodi asperiores non
+                ipsa itaque doloremque earum dicta, suscipit explicabo, inventore in repellat rem vero quaerat fugit.
+                Eius est vel eveniet amet facilis nostrum, adipisci incidunt hic, praesentium doloremque aperiam!
+                Distinctio eos ratione doloribus quam inventore quasi magni itaque, dignissimos placeat unde fuga odio
+                vitae totam mollitia rem dolor, iste vero quis beatae debitis illum excepturi minus officia veritatis?
+                Odio eveniet fuga similique, hic eius, doloremque laudantium labore tempore maxime quisquam voluptatibus
+                voluptates cum iure consectetur. Debitis harum ut nobis, pariatur, esse omnis nostrum, labore
+                voluptatibus facilis voluptatem sint.</p>
+        </section>
+        <aside class="bdr">
+            <h1>More about us</h1>
+        </aside>
+    </div>
+    <footer class="bdr"> Copyright Harsha's Code2022</footer>
+</body>
+
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Fitness Club</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+    /* css reset  */
+    body {
+        font-family: 'Square Peg', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url(img/man.jpg);
+
+    }
+
+    .left {
+        position: absolute;
+        left: 34px;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid rgb(182, 175, 178); */
+
+    }
+    .left  img{
+         width: 140px;
+    }
+    .left div {
+    text-align: center;
+    font-size: 25px;
+    }
+
+    .mid {
+        display: block;
+        width: 50%;
+        margin: 20px auto;
+        /* border: 2px solid rgb(9, 119, 119); */
+        font-size: 40px;
+    
+
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid rgb(182, 175, 178); */
+
+    }
+    .navbar {
+        display: inline-block;
+
+    }
+    .navbar li {
+        display: inline-block;
+        font-size: 35px;
+        
+   
+    }
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+    .navbar li a:hover, .navbar li a.active {
+        text-decoration: underline;
+        color: gray;
+    }
+    .btn{
+        margin: 0px 10px;
+        background-color: black;
+        color: white;
+        padding: 4px,14px;
+        border: 2px solid rgb(9, 119, 119);
+        border-radius: 7px;
+        font-size: 20px;
+        cursor: pointer;
+        font-family: 'Square Peg', cursive;
+
+
+    }
+    .btn:hover {
+        color:grey ;
+    }
+    .container{
+        border: 2px solid white;
+        margin: 70px 50px;
+        padding: 75px;
+        width: 40%;
+        border-radius: 28px;
+        font-size: 30px;
+    }
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 400px;
+        height: 20px;
+        padding: 1px;
+        border: 2px solid rgb(57, 204, 197);
+        margin: 11px auto;
+         border-radius: 5px;
+
+    }
+    .container h3 {
+        text-align: center;
+        background-color: black;
+
+
+    }
+    .container button {
+        display: block;
+        width: 23%;
+        margin: auto;
+        font-size: 30px;
+    }
+
+
+
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo  -->
+        <div class="left">
+           <img src="img/dumbbells.jpg" alt="">
+           <div> Fitness Club</div>
+
+            <!-- mid box for nav bar -->
+        </div>
+        <div class="mid">
+            
+                <ul class="navbar">
+                    <li><a href="#" class="active">home</a></li>
+                    <li> <a href="#">About us</a></li>
+                    <li><a href="#">Fitness calculator</a></li>
+                    <li> <a href="#">contact us</a></li>
+                </ul>
+
+            <!-- right box for buttons -->
+        </div>
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Email us</button>
+
+
+        </div>
+
+    </header>
+    <div class="container">
+        <h3>Join Fitness Club Now</h3>
+        <form action="noactio.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder=" Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder=" Enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder=" Enter your gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder=" Enter your locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder=" Enter your Mobile Number">
+            </div>
+<button class="btn">
+submit
+
+</button>
+
+        </form>
+
+    </div>
+</body>
+
+</html>
