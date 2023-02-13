@@ -1,0 +1,16 @@
+var flag = true;
+
+function throttle() {
+    console.log(flag)
+  if (flag) {
+    doThrottle();
+    flag = false;
+    setTimeout(function () {
+      flag = true;
+    }, 5000);
+  }
+}
+
+function doThrottle() {
+  console.log("i did throthling");
+}

@@ -1,0 +1,59 @@
+
+benifit of event deligation 
+1) save memeory by not saving multiple event handlers only saves parent event handlers
+2) imporoves performance
+3) writing less code and dynamic code 
+
+pros of evevnt deligation
+1) all events are not bubbled up like blur, focus,recycling of window, scroll 
+
+common examples of evevnt which bubbled up are click, keyup, key-down 
+2) if stopPropogation is used then the event deligation wont work 
+why is react popular?
+-vertual dom 
+-one way binding (perent to child ) ()
+-componenets
+-reuseable components
+-jsx (html like syntax)
+
+
+what is the folder structure used in project?
+src-> redux
+		helpers
+		componets
+		pages
+		utilites
+
+
+
+react fragment?
+
+difrenciate in state and props?
+state is mutable, props and not
+state is used to re-render the compnents
+props helps in making the compnents reusable
+props can be passed from one comp to another
+state holds info about components 
+
+have you used hooks?
+useMemo and useContext
+
+
+what is redux?
+manage state on top level
+stores a lot of states of application
+has a common stores
+any compnent can acces stores data that is state by creating a conect between both of them 
+by using actions and reducers
+
+have you used Typescript?
+
+what is the difrence between type and interfaces in typescripts
+way to 
+
+code round
+map vs foreach with example ?
+what is "this" key word? give example 
+
+
+create and input element and display error if the age is less than 18

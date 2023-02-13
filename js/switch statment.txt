@@ -1,0 +1,108 @@
+
+
+switch:-
+The switch statement is used to perform different actions based on different conditions.
+
+This is how it works:
+
+The switch expression is evaluated once.
+The value of the expression is compared with the values of each case.
+If there is a match, the associated block of code is executed.
+If there is no match, the default code block is executed.
+
+switch
+The switch statement evaluates an expression, matching the expression's value against a series of case clauses, 
+and executes statements after the first case clause with a matching value, until a break statement is encountered. 
+The default clause of a switch statement will be jumped to if no case matches the expression's value.
+
+
+switch with expression
+const marks = 78;
+
+switch (true) { //78===true
+
+   case marks>=90: console.log("you are one of the toppers");
+    break;
+    case marks>=75: console.log("you have scored distinction ");
+    break;
+  case marks>=40: console.log("pass with grace"); 
+   break;0
+  
+ 
+  default: console.log("bhaii to to gaya! fail hai tu!!!!");
+
+}
+
+simple switch 
+const expr = 'Papayas';
+switch ('Papayas') {
+  case 'Oranges':
+    console.log('Oranges are $0.59 a pound.');
+    break;
+  case 'Mangoes':
+  case 'Papayas':
+    console.log('Mangoes and papayas are $2.79 a pound.');
+    // expected output: "Mangoes and papayas are $2.79 a pound."
+    break;
+  default:
+    console.log(`Sorry, we are out of ${expr}.`);
+}
+
+const number = 97
+
+switch (number){//97
+  case  100: console.log("sky is blue")
+   break;
+    case  80: console.log("sky is white")
+   break;
+    case 97: console.log("sky is pink")
+   break;
+    case 82: console.log("sky is black")
+   break;
+    default : console.log("sunny day")
+}
+
+const expre = ""
+
+switch (expre){
+  case  'Mattress' : console.log("Mattress is beautiful & colorfull")
+   break;
+    case  'bedsheet': console.log("bedsheet is white")
+   break;
+    case 'curtain': console.log("curtain is beautiful & colorfull")
+   break;
+    case 'dress': console.log("dress is beautiful & colorfull")
+   break;
+    default : console.log(" All the furnitures are beautiful & colorfull")
+}
+
+const color = ""
+
+switch (color){
+  case  'red' : console.log("we are in danger")
+   break;
+    case  'black': console.log("blackout")
+   break;
+    case 'green': console.log("we are good to go")
+   break;
+ 
+    default : console.log(" no signal, we have to take a pause")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

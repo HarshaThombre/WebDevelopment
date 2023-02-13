@@ -1,0 +1,12 @@
+
+
+React uses the virtual DOM as a strategy to compute minimal DOM operations when re-rendering the UI. 
+It is not in rivalry with or faster than the DOM! The virtual DOM provides a mechanism that abstracts
+manual DOM manipulations away from the developer, helping us write more predictable code.
+
+
+What is DOM and virtual DOM in React?
+Image result for virtual dom in react
+VDOM is the virtual representation of Real DOM. React update the state changes in Virtual DOM first 
+and then it syncs with Real DOM. Virtual DOM is just like a blueprint of a machine, can do the changes
+ in the blueprint but those changes will not directly apply to the machine.

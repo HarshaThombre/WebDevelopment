@@ -1,0 +1,43 @@
+//write function
+//write arrow function
+//write setTimeout and print console.log()
+//write setTimeout and call a function from it
+
+// const a = 20;
+// const b = 10;
+
+// function mutiply(){
+//   console.log(a*b);
+// }
+// mutiply()
+
+// const harsha =()=> "hello world"
+// console.log(harsha());
+
+// setTimeout(() => {
+//   console.log(' World!');
+// }, 500);
+
+// setTimeout(() => {
+// console.log("hello everyone");
+// },100);
+
+const harsha = () => {
+  return "amax4040";
+};
+
+setTimeout(function () {
+  console.log(harsha);
+}, 100);
+
+// setTimeout(function () {
+//   console.log("i am god");
+// }, 0);
+
+// function printFullName() {
+//   console.log("i am gaikwad");
+// }
+
+// setTimeout(function () {
+//     printFullName();
+// }, 5000);

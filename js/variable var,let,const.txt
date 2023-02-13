@@ -1,0 +1,27 @@
+//variables
+
+function printname() {
+ var name= "prafful";//fuction scope
+ 
+  {
+    let name ="harsha";
+     
+    console.log(name)
+  }
+  
+  {
+    
+    let name="pallavi"//block scope
+    name="paooap"
+    console.log(name)
+  }
+  
+   {
+    
+    const name="rocky"//block scope
+    name="asas"
+    console.log(name)
+  }
+   console.log(name)
+  
+}

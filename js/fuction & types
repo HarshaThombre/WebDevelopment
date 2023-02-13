@@ -1,0 +1,67 @@
+//function statement aka function declaration
+printName();
+function printName(roll) {
+  this.roll = 85;
+  console.log("i am function statment ");
+  console.log(roll);
+  console.log(this.roll);
+}
+printName(44);
+
+var myArrow = (roll) => {
+  this.roll = 85;
+  console.log("i am function statment ");
+  console.log(roll);
+  console.log(this.roll);
+};
+myArrow(44);
+const printName1 = () => {
+  console.log(this);
+};
+
+// //function Expression
+//console.log(fun);
+var fun = function () {
+  console.log("i am function expression ");
+};
+console.log(fun);
+fun();
+
+//function declaration same as statement
+
+//anonymous function
+
+//  function () {
+
+//  }
+
+//Named function Expression
+var fun = function xyz() {
+  console.log(xyz);
+  console.log("i am function expression ");
+};
+console.log(fun);
+fun();
+
+//difference between parameters and arguments
+
+// First Class functions
+function sita() {
+  console.log("i am being passed");
+}
+
+function devD() {
+  console.log("iiala tum to sai nikle");
+}
+//var num=42;
+function humHero(rita, mita) {
+  console.log(rita);
+  console.log(mita);
+  sita();
+  rita();
+  mita();
+}
+
+humHero(sita, devD);
+
+//arrowfunction
